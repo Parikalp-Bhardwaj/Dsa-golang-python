@@ -1,2 +1,2 @@
 # Dsa-golang-python
-Dsa with golang and python
+Dsa with Golang and Python
