@@ -88,6 +88,6 @@ func main() {
 	// Create folder for every file
 	// createDirectory(foldername)
 
-	moveToDirectory(allFiles)
+	defer moveToDirectory(allFiles)
 
 }
