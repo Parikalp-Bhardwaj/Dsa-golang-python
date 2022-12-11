@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"time"
 )
 
 func showFiles(files []string) []string {
@@ -84,9 +85,12 @@ func main() {
 	foldername := foldersName(files)
 
 	fmt.Println(foldername)
-
+	time.Sleep(5 * time.Second)
 	// Create folder for every file
-	// createDirectory(foldername)
+
+	
+	createDirectory(foldername)
+	time.Sleep(5 * time.Second)
 
 	defer moveToDirectory(allFiles)
 
