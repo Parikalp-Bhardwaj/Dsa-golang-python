@@ -39,6 +39,7 @@ func foldersName(files []string) map[string]int {
 
 func createDirectory(foldername map[string]int) {
 	fmt.Println("Creating folder...")
+	time.Sleep(2 * time.Second)
 	count := 1
 	for dir, _ := range foldername {
 		// time.Sleep(1 * time.Second)
@@ -85,10 +86,9 @@ func main() {
 	foldername := foldersName(files)
 
 	fmt.Println(foldername)
-	time.Sleep(5 * time.Second)
+	// time.Sleep(5 * time.Second)
 	// Create folder for every file
 
-	
 	createDirectory(foldername)
 	time.Sleep(5 * time.Second)
 
